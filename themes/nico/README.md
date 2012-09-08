@@ -1,4 +1,4 @@
-*Be sure to read the header, it contains important information!*
+**Be sure to read the header, it contains important information!**
 
 The theme is heavily inspired by
  [this theme,](http://www.warp13.co.uk/putty#content) which sadly can not be
