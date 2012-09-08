@@ -1,8 +1,11 @@
-Sadly the most scripts hosted on scripts.irssi.org are outdated so I decided to host the scripts I am using at this place.
+Sadly the most scripts hosted on [scripts.irssi.org](http://scripts.irssi.org/)
+ are outdated so I decided to host the scripts I am using at this place.
 
-Here is the output of /scriptassist check with (almost) all the scripts in this folder:
+Here is the output of /scriptassist check with (almost) all the scripts in this
+ folder:
 
-The scripts marked with * are modified by me or others, see below for the changes.
+The scripts marked with * are modified by me or others, see below for the
+ changes.
 
      ,--[ScriptAssist]
      | o auth_quakenet_challenge No version information available on network.
