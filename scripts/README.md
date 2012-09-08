@@ -8,7 +8,7 @@ Sadly the most scripts hosted on [scripts.irssi.org](http://scripts.irssi.org/)
 * [`crapbuster.pl`](crapbuster.pl) -- Bugfix
 * [`fixlamer.pl`](fixlamer.pl) -- Contains my personal replaces
 * [`foreach_user_nome.pl`](foreach_user_nome.pl) -- This is basically foreach_user.pl with yourself excluded
-* [`geoip2.pl`](geoip2.pl) -- Changed encoding to UTF-8, made it only use one line in the whois (format: city-&gt;region-&gt;country) and none if location is unkown. Also changed regexes, only lookup by name if a dot is in the host.
+* [`geoip2.pl`](geoip2.pl) -- Changed encoding to UTF-8, made it only use one line in the whois (format: city->region-&gt;country) and none if location is unkown. Also changed regexes, only lookup by name if a dot is in the host.
 * [`hilightwin.pl`](hilightwin.pl) -- Use "highlightwin" not "hilightwin"
 * [`jpqnmwin.pl`](jpqnmwin.pl) -- My modification of jpqwin.pl (does nicks and modes too, removed any settings)
 * [`linkchan.pl`](linkchan.pl) -- Split the username by a dot to prevent highlighting yourself and others
@@ -28,13 +28,13 @@ The scripts marked with * are modified by me or others, see above for the
 
      ,--[ScriptAssist]
      | o auth_quakenet_challenge No version information available on network.
-    *| o ascii                   Your version is newer (1.6.3-r1-&gt;1.6.3)
+    *| o ascii                   Your version is newer (1.6.3-r1->1.6.3)
     *| o banaffects_sd           No version information available on network
      | o cap_sasl                No version information available on network.
-     | o chanact                 Your version is newer (master-&gt;0.5.14)
+     | o chanact                 Your version is newer (master->0.5.14)
      | o chansort                Up to date. (1.4)
      | o colour_popup            No version information available on network.
-    *| o crapbuster              Your version is newer (2003020801-r1-&gt;2003020801)
+    *| o crapbuster              Your version is newer (2003020801-r1->2003020801)
     *| o fixlamer                No header in script.
     *| o foreach_user_nome       No version information available on network.
     *| o geoip2                  No version information available on network.
@@ -48,18 +48,18 @@ The scripts marked with * are modified by me or others, see above for the
     *| o jpqnmwin                No version information available on network.
      | o kicks                   Up to date. (0.26)
      | o knock                   No version information available on network.
-     | o nickcolor               Your version is newer (1.2-&gt;1)
-    *| o nickignore              Your version is newer (0.05-&gt;0.03)
+     | o nickcolor               Your version is newer (1.2->1)
+    *| o nickignore              Your version is newer (0.05->0.03)
      | o notifyquit              No version information available on network.
-    *| o queryresume             Your version is newer (2003021201-r1-&gt;2003021201)
-     | o repeat                  Your version is newer (master-&gt;0.2.0)
+    *| o queryresume             Your version is newer (2003021201-r1->2003021201)
+     | o repeat                  Your version is newer (master->0.2.0)
      | o rtrim                   No version information available on network.
     *| o sb_position             No version information available on network.
-    *| o scriptassist            Your version is newer (2003020803-r1-&gt;2003020803)
+    *| o scriptassist            Your version is newer (2003020803-r1->2003020803)
      | o scrolled_reminder       No version information available on network.
      | o softignore              No version information available on network.
      | o splitlong               Up to date. (0.20)
-     | o tab_stop                Your version is newer (2011052400-&gt;2002123102)
+     | o tab_stop                Your version is newer (2011052400->2002123102)
      | o tabcompletenick         No header in script.
      | o tf                      No version information available on network.
      | o title                   Your version is newer (3.2b-3.2)
@@ -70,5 +70,5 @@ The scripts marked with * are modified by me or others, see above for the
      | o whois0810               No version information available on network.
      | o xlist                   Up to date. (1.00)
      | o youtube                 No version information available on network.
-     `--&lt;check&gt;-&gt;
+     `--<check>->
 
