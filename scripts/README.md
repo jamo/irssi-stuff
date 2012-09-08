@@ -1,29 +1,10 @@
 Sadly the most scripts hosted on [scripts.irssi.org](http://scripts.irssi.org/)
  are outdated so I decided to host the scripts I am using at this place.
 
-**Modified scripts (name: what changed):**
-
-* [`ascii.pl`](ascii.pl) -- Don't remember, maybe a bufix
-* [`banaffects_sd.pl`](banaffects_sd.pl) -- Added self-defense mechanism and changed formats to match the default theme
-* [`crapbuster.pl`](crapbuster.pl) -- Bugfix
-* [`fixlamer.pl`](fixlamer.pl) -- Contains my personal replaces
-* [`foreach_user_nome.pl`](foreach_user_nome.pl) -- This is basically foreach_user.pl with yourself excluded
-* [`geoip2.pl`](geoip2.pl) -- Changed encoding to UTF-8, made it only use one line in the whois (format: city-&gt;region-&gt;country) and none if location is unkown. Also changed regexes, only lookup by name if a dot is in the host.
-* [`hilightwin.pl`](hilightwin.pl) -- Use "highlightwin" not "hilightwin"
-* [`jpqnmwin.pl`](jpqnmwin.pl) -- My modification of jpqwin.pl (does nicks and modes too, removed any settings)
-* [`linkchan.pl`](linkchan.pl) -- Split the username by a dot to prevent highlighting yourself and others
-* [`nickignore.pl`](nickignore.pl) -- Bugfix
-* [`queryresume.pl`](queryresume.pl) -- Changed color from red to blue to match nico.theme (looks good on default.theme too ;)
-* [`sb_position.pl`](sb_position.pl) -- Added new formats, four to choose from (line 108+)
-* [`scriptassist.pl`](scriptassist.pl) -- Fixed perl warnings
-* [`trackbar.pl`](trackbar.pl) -- Terminal redraw works (not my work), option to exclude windows added, option to draw a timestamp at the bar start added, option to toggle whether the timestamp respects the style/format of the bar added.Command /scroll to easily scroll to the bar added
-* [`uberprompt.pl`](uberprompt.pl) -- Removed/disabled add/restore and on/off functionality otherwise it does not work with more than the prompt in the statusbars "prompt" section. Add it manually to the statusbar: uberprompt = { priority = "-1"; };
-
-
 Here is the output of /scriptassist check with (almost) all the scripts in this
- folder (modified and unmodified ones):
+ folder:
 
-The scripts marked with * are modified by me or others, see above for the
+The scripts marked with * are modified by me or others, see below for the
  changes.
 
      ,--[ScriptAssist]
@@ -72,3 +53,20 @@ The scripts marked with * are modified by me or others, see above for the
      | o youtube                 No version information available on network.
      `--&lt;check&gt;-&gt;
 
+**Modified scripts (name: what changed):**
+
+* [`ascii.pl`] -- Don't remember, maybe a bufix
+* [`banaffects_sd.pl`] -- Added self-defense mechanism and changed formats to match the default theme
+* [`crapbuster.pl`]: -- Bugfix
+* [`fixlamer`.pl`]: -- Contains my personal replaces
+* [`foreach_user_nome.pl`]: -- This is basically foreach_user.pl with yourself excluded
+* [`geoip2.pl`]: -- Changed encoding to UTF-8, made it only use one line in the whois (format: city-&gt;region-&gt;country) and none if location is unkown. Also changed regexes, only lookup by name if a dot is in the host.
+* [`hilightwin.pl`]: -- Use "highlightwin" not "hilightwin"
+* [`jpqnmwin.pl`]: -- My modification of jpqwin.pl (does nicks and modes too, removed any settings)
+* [`linkchan.pl`]: -- Split the username by a dot to prevent highlighting yourself and others
+* [`nickignore.pl`]: -- Bugfix
+* [`queryresume.pl`]: -- Changed color from red to blue to match nico.theme (looks good on default.theme too ;)
+* [`sb_position.pl`]: -- Added new formats, four to choose from (line 108+)
+* [`scriptassist.pl`]: -- Fixed perl warnings
+* [`trackbar.pl`]: -- Terminal redraw works (not my work), option to exclude windows added, option to draw a timestamp at the bar start added, option to toggle whether the timestamp respects the style/format of the bar added.Command /scroll to easily scroll to the bar added
+* [`uberprompt.pl`]: -- Removed/disabled add/restore and on/off functionality otherwise it does not work with more than the prompt in the statusbars "prompt" section. Add it manually to the statusbar: uberprompt = { priority = "-1"; };
