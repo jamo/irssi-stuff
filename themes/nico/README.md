@@ -5,4 +5,4 @@ The theme is heavily inspired by
  found there. It is my first (and since last) irssi theme and dates back to
  2007.
 
-Screenshot: [`irssi_nico.theme.png`](irssi_nico.theme.png)
+Screenshot: [`irssi_nico.theme.png`](nico/irssi_nico.theme.png)
