@@ -30,6 +30,7 @@ The scripts marked with * are modified by me or others, see above for the
      | o auth_quakenet_challenge No version information available on network.
     *| o ascii                   Your version is newer (1.6.3-r1->1.6.3)
     *| o banaffects_sd           No version information available on network
+     | o bantime                 Your version is newer (1.03->0.5)
      | o cap_sasl                No version information available on network.
      | o chanact                 Your version is newer (master->0.5.14)
      | o chansort                Up to date. (1.4)
@@ -51,6 +52,7 @@ The scripts marked with * are modified by me or others, see above for the
      | o nickcolor               Your version is newer (1.2->1)
     *| o nickignore              Your version is newer (0.05->0.03)
      | o notifyquit              No version information available on network.
+     | o quakequit               No version information available on network.
     *| o queryresume             Your version is newer (2003021201-r1->2003021201)
      | o repeat                  Your version is newer (master->0.2.0)
      | o rtrim                   No version information available on network.
