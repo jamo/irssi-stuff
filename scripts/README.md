@@ -1,14 +1,16 @@
 Sadly the most scripts hosted on [scripts.irssi.org](http://scripts.irssi.org/)
  are outdated so I decided to host the scripts I am using at this place.
 
-**Modified scripts (name: what changed):**
+**Modified and own scripts (name: what changed):**
 
 * [`ascii.pl`](ascii.pl) -- Don't remember, maybe a bufix
+* [`auth_quakenet_challenge.pl`](auth_quakenet_challenge.pl) -- Use send_raw_now()
 * [`banaffects_sd.pl`](banaffects_sd.pl) -- Added self-defense mechanism and changed formats to match the default theme
 * [`crapbuster.pl`](crapbuster.pl) -- Bugfix
 * [`fixlamer.pl`](fixlamer.pl) -- Contains my personal replaces
 * [`foreach_user_nome.pl`](foreach_user_nome.pl) -- This is basically foreach_user.pl with yourself excluded
 * [`geoip2.pl`](geoip2.pl) -- Changed encoding to UTF-8, made it only use one line in the whois (format: city->region-&gt;country) and none if location is unkown. Also changed regexes, only lookup by name if a dot is in the host.
+* [`greetignore.pl`](greetignore.pl) -- Hide the stupid "greet messages" mostly blogged by bots after someone joins a channel
 * [`hilightwin.pl`](hilightwin.pl) -- Use "highlightwin" not "hilightwin"
 * [`jpqnmwin.pl`](jpqnmwin.pl) -- My modification of jpqwin.pl (does nicks and modes too, removed any settings)
 * [`linkchan.pl`](linkchan.pl) -- Split the username by a dot to prevent highlighting yourself and others
@@ -41,6 +43,7 @@ The scripts marked with * are modified by me or others, see above for the
     *| o geoip2                  No version information available on network.
      | o getnick                 No version information available on network.
      | o go2                     No version information available on network.
+    *| o greetignore             No version information available on network.
     *| o hilightwin              Up to date. (0.02)
      | o history_search          Up to date. (2.0)
      | o hlscroll                No version information available on network.

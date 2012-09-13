@@ -29,7 +29,7 @@ use vars qw($VERSION %IRSSI);
 ## To trigger the script manually, use:
 ## /msg Q@cserve.quakenet.org challenge
 
-$VERSION = "1.0";
+$VERSION = "1.1";
 %IRSSI = (
 	authors     => 'Mantas Mikulėnas',
 	contact     => 'grawity@gmail.com',
@@ -116,7 +116,7 @@ Irssi::signal_add_last "event 001" => sub {
 	return if (!defined $p) or ($p eq "");
 
 	$server->print("", "Authenticating to Q");
-	$server->send_message('Q@cserve.quakenet.org', "CHALLENGE", 1);
+	$server->send_raw_now('PRIVMSG Q@cserve.quakenet.org :CHALLENGE');
 };
 
 Irssi::signal_add_first "message irc notice" => sub {
@@ -162,7 +162,7 @@ Irssi::signal_add_first "message irc notice" => sub {
 		my $authfn = $supported_mechs{$mech};
 
 		my $response = &$authfn($challenge, $user, $password);
-		$server->send_message('Q@cserve.quakenet.org', "CHALLENGEAUTH $user $response $mech", 1);
+		$server->send_raw_now("PRIVMSG Q\@cserve.quakenet.org :CHALLENGEAUTH $user $response $mech");
 	}
 	
 	elsif ($msg =~ /^You are now logged in as (.+?)\.$/) {
