@@ -38,6 +38,7 @@ The scripts marked with * are modified by me or others, see above for the
      | o chansort                Up to date. (1.4)
      | o colour_popup            No version information available on network.
     *| o crapbuster              Your version is newer (2003020801-r1->2003020801)
+     | o fifo_remote             No version information available on network.
     *| o fixlamer                No header in script.
     *| o foreach_user_nome       No version information available on network.
     *| o geoip2                  No version information available on network.

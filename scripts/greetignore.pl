@@ -20,8 +20,6 @@
 # Shamelessly edited David 'phyber' O'Rourke's quakequit.pl.
 # Most credits to him :p
 
-use Data::Dumper;
-
 use strict;
 use Irssi;
 use vars qw($VERSION %IRSSI);
@@ -29,11 +27,11 @@ $VERSION = "1.0";
 %IRSSI = (
 	authors		=> "David O\'Rourke, Nico R. Wohlgemuth",
 	contact		=> "nico\@lifeisabug.com",
-	name		=> "greetignore",
-	description	=> "Hide the stupid \"greet messages\" mostly blogged by bots ".
-                  " after someone joins a channel.",
+	name			=> "greetignore",
+	description	=> "Hide the stupid \"greet messages\" mostly blogged by bots".
+						" after someone joins a channel.",
 	licence		=> "GPLv2",
-	changed		=> "20120913",
+	changed		=> "20120914",
 );
 
 # Output a few extra messages to the status window to help with 
@@ -57,30 +55,30 @@ sub process_tag {
 # Remove entries from the joins hash.
 sub purge_nick {
 	my ($data) = @_;
-   my @tagnick = split /:/, $data;
+	my @tagnick = split /:/, $data;
 	delete $joins{$tagnick[0]}{$tagnick[1]};
 	return 0;
 }
 
 # Ignore lines like "<SomeBot> [$nick] This is a shitty greet message."
 sub ignore_greet {
-   my ($server_rec, $msg, $nick, $addr, $target) = @_;
-   my $tag = $server_rec->{tag};
-   # Don't proceed if the hash is empty.
-   # hash returns <elements>/<buckets> in scalar context and just 0 if it's empty.
-   if (!$joins{$tag} || !(keys(%{$joins{$tag}}))) {
-      return 0;
-   }
-   # Return if we don't care about this tag.
-   if (process_tag($tag) == 0) {
-      return 0;
-   }
-   # If the message matches a nick in our joins hash, don't show the greet message.
-   if ($msg =~ /^\[(.+?)\] / && $joins{$tag}{$1} && $nick ne $1) {
-      Irssi::signal_stop();
-      Irssi::print "Ignored: <$nick> $msg" if $debug;
-      return 0;
-   }
+	my ($server_rec, $msg, $nick, $addr, $target) = @_;
+	my $tag = $server_rec->{tag};
+	# Don't proceed if the hash is empty.
+	# hash returns <elements>/<buckets> in scalar context and just 0 if it's empty.
+	if (!$joins{$tag} || !(keys(%{$joins{$tag}}))) {
+		return 0;
+	}
+	# Return if we don't care about this tag.
+	if (process_tag($tag) == 0) {
+		return 0;
+	}
+	# If the message matches a nick in our joins hash, don't show the greet message.
+	if ($msg =~ /^\[(.+?)\] / && $joins{$tag}{$1} && $nick ne $1) {
+		Irssi::signal_stop();
+		Irssi::print "Ignored: <$nick> $msg" if $debug;
+		return 0;
+	}
 }
 
 # Process the 'message join' signal. (/JOIN)
@@ -91,9 +89,9 @@ sub message_join {
 	if (process_tag($tag) == 0) {
 		return 0;
 	}
-   $joins{$tag}{$nick}++;
-   my $data = $tag.':'.$nick;
-   Irssi::timeout_add_once(1000, 'purge_nick', $data);
+	$joins{$tag}{$nick}++;
+	my $data = $tag.':'.$nick;
+	Irssi::timeout_add_once(1000, 'purge_nick', $data);
 	return 0;
 }
 
