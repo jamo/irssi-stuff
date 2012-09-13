@@ -5,7 +5,7 @@
 # <IdiotBot> [Nick] This is a shitty greet message.
 # <nico> Sigh, I wish I just could ignore those...
 #####
-# A "greet" nmessage for a joining dude, ridiculous.
+# A "greet" message for a joining dude, ridiculous.
 #####
 # >>> Nick!ident@hos.t has joined #channel
 # <nico> Way better.
