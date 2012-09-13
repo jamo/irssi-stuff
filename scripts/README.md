@@ -47,7 +47,6 @@ The scripts marked with * are modified by me or others, see above for the
     *| o hilightwin              Up to date. (0.02)
      | o history_search          Up to date. (2.0)
      | o hlscroll                No version information available on network.
-     | o hueg                    No version information available on network.
      | o intercept               No version information available on network.
     *| o jpqnmwin                No version information available on network.
      | o kicks                   Up to date. (0.26)
