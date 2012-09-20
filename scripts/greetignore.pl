@@ -99,5 +99,5 @@ sub message_join {
 # greetignore_networks: set the networks that you'd like this script to watch
 Irssi::settings_add_str('greetignore', 'greetignore_networks', 'Rizon');
 # Signals to grab
-Irssi::signal_add('message join', 'message_join');
+Irssi::signal_add_first('message join', 'message_join');
 Irssi::signal_add_last("message public", "ignore_greet");
