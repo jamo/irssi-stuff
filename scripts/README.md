@@ -15,6 +15,7 @@ Sadly the most scripts hosted on [scripts.irssi.org](http://scripts.irssi.org/)
 * [`jpqnmwin.pl`](jpqnmwin.pl) -- My modification of jpqwin.pl (does nicks and modes too, removed any settings)
 * [`linkchan.pl`](linkchan.pl) -- Split the username by a dot to prevent highlighting yourself and others
 * [`nickignore.pl`](nickignore.pl) -- Bugfix
+* [`query_whois.pl`](query_whois.pl) -- Also show the idle time of the whoised user
 * [`queryresume.pl`](queryresume.pl) -- Changed color from red to blue to match nico.theme (looks good on default.theme too ;)
 * [`sb_position.pl`](sb_position.pl) -- Added new formats, four to choose from (line 108+)
 * [`scriptassist.pl`](scriptassist.pl) -- Fixed perl warnings
@@ -56,6 +57,7 @@ The scripts marked with * are modified by me or others, see above for the
     *| o nickignore              Your version is newer (0.05->0.03)
      | o notifyquit              No version information available on network.
      | o quakequit               No version information available on network.
+    *| o query_whois             No version information available on network.
     *| o queryresume             Your version is newer (2003021201-r1->2003021201)
      | o repeat                  Your version is newer (master->0.2.0)
      | o rtrim                   No version information available on network.
@@ -63,9 +65,10 @@ The scripts marked with * are modified by me or others, see above for the
     *| o scriptassist            Your version is newer (2003020803-r1->2003020803)
      | o scrolled_reminder       No version information available on network.
      | o softignore              No version information available on network.
-     | o splitlong               Up to date. (0.20)
+     | o splitlong_safe          No version information available on network.
      | o tab_stop                Your version is newer (2011052400->2002123102)
      | o tabcompletenick         No header in script.
+     | o tag                     No version information available on network.
      | o tf                      No version information available on network.
      | o title                   Your version is newer (3.2b-3.2)
     *| o trackbar                No header in script.
