@@ -30,6 +30,7 @@ The scripts marked with * are modified by me or others, see above for the
  changes.
 
      ,--[ScriptAssist]
+     | o ack                     No version information available on network.
      | o auth_quakenet_challenge No version information available on network.
     *| o ascii                   Your version is newer (1.6.3-r1->1.6.3)
     *| o banaffects_sd           No version information available on network
