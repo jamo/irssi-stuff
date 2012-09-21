@@ -99,7 +99,7 @@ use POSIX qw(strftime);
 use Irssi;
 use Irssi::TextUI;
 
-my $VERSION = "1.6";
+my $VERSION = "1.7";
 
 my %IRSSI = (
     authors     => "Peter 'kinlo' Leurs, Uwe Dudenhoeffer," .
