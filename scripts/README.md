@@ -6,7 +6,6 @@ Sadly the most scripts hosted on [scripts.irssi.org](http://scripts.irssi.org/)
 * [`ascii.pl`](ascii.pl) -- Don't remember, maybe a bufix
 * [`auth_quakenet_challenge.pl`](auth_quakenet_challenge.pl) -- Use send_raw_now()
 * [`banaffects_sd.pl`](banaffects_sd.pl) -- Added self-defense mechanism and changed formats to match the default theme
-* [`crapbuster.pl`](crapbuster.pl) -- Bugfix
 * [`fixlamer.pl`](fixlamer.pl) -- Contains my personal replaces
 * [`foreach_user_nome.pl`](foreach_user_nome.pl) -- This is basically foreach_user.pl with yourself excluded
 * [`geoip2.pl`](geoip2.pl) -- Changed encoding to UTF-8, made it only use one line in the whois (format: city->region-&gt;country) and none if location is unkown. Also changed regexes, only lookup by name if a dot is in the host.
@@ -39,7 +38,6 @@ The scripts marked with * are modified by me or others, see above for the
      | o chanact                 Your version is newer (master->0.5.14)
      | o chansort                Up to date. (1.4)
      | o colour_popup            No version information available on network.
-    *| o crapbuster              Your version is newer (2003020801-r1->2003020801)
      | o fifo_remote             No version information available on network.
     *| o fixlamer                No header in script.
     *| o foreach_user_nome       No version information available on network.
