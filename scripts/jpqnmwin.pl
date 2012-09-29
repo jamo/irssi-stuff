@@ -4,7 +4,7 @@ use Irssi;
 use POSIX qw(strftime);
 use vars qw($VERSION %IRSSI); 
 
-$VERSION = "1.1";
+$VERSION = "1.2";
 %IRSSI = (
     authors     => "Maximilian \'sdx23\' Voit, Nico R. Wohlgemuth",
     contact     => "nico\@lifeisabug.com",
@@ -13,7 +13,7 @@ $VERSION = "1.1";
                    " to a window named \"jpqnm\"",
     license     => "GPLv2",
     url         => "http://irssi.org/",
-    changed     => "Fri Aug 10 19:48:00 CEST 2012"
+    changed     => "2012-09-29"
 );
 
 my $lasttext = '';
@@ -67,7 +67,11 @@ sub sig_printtext {
    
       $lastext = $text;
 
-      Irssi::signal_stop() if (! $dest->{level} & MSGLEVEL_KICKS);
+      if (Irssi::settings_get_bool("jpqnmwin_stop_signal")) {
+         if (!($dest->{level} & MSGLEVEL_KICKS)) {
+            Irssi::signal_stop();
+         }
+      }
     }
 }
 
@@ -75,5 +79,7 @@ my $window = Irssi::window_find_name('jpqnm');
 Irssi::print("Create a window named 'jpqnm'") if(!$window);
 
 Irssi::signal_add('print text', 'sig_printtext');
+
+Irssi::settings_add_bool("jpqnmwin", "jpqnmwin_stop_signal", 1);
 
 # vim:set ts=4 sw=4 et:
