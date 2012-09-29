@@ -12,6 +12,7 @@ Sadly the most scripts hosted on [scripts.irssi.org](http://scripts.irssi.org/)
 * [`greetignore.pl`](greetignore.pl) -- Hide the stupid "greet messages" mostly blogged by bots after someone joins a channel
 * [`hilightwin.pl`](hilightwin.pl) -- Use "highlightwin" not "hilightwin"
 * [`jpqnmwin.pl`](jpqnmwin.pl) -- My modification of jpqwin.pl (does nicks and modes too, removed any settings)
+* [`levelclear.pl`](levelclear.pl) -- Similar to crapbuster.pl but uses irssis internal scrollback levelclear functionality and is able to clear the previous window after switching them
 * [`linkchan.pl`](linkchan.pl) -- Split the username by a dot to prevent highlighting yourself and others
 * [`nickignore.pl`](nickignore.pl) -- Bugfix
 * [`query_whois.pl`](query_whois.pl) -- Also show the idle time of the whoised user
@@ -52,6 +53,7 @@ The scripts marked with * are modified by me or others, see above for the
     *| o jpqnmwin                No version information available on network.
      | o kicks                   Up to date. (0.26)
      | o knock                   No version information available on network.
+    *| o levelclear              No version information available on network.
      | o nickcolor               Your version is newer (1.2->1)
     *| o nickignore              Your version is newer (0.05->0.03)
      | o notifyquit              No version information available on network.
@@ -68,11 +70,9 @@ The scripts marked with * are modified by me or others, see above for the
      | o tab_stop                Your version is newer (2011052400->2002123102)
      | o tabcompletenick         No header in script.
      | o tag                     No version information available on network.
-     | o tf                      No version information available on network.
      | o title                   Your version is newer (3.2b-3.2)
     *| o trackbar                No header in script.
      | o trigger                 Your version is newer (1.0+-1.0)
-     | o tt                      No version information available on network.
     *| o uberprompt              No version information available on network.
      | o whois0810               No version information available on network.
      | o xlist                   Up to date. (1.00)
