@@ -27,7 +27,7 @@ sub levelclear {
 Irssi::signal_add(
    'window changed' => sub {
       my (undef, $oldwin) = @_;
-      $oldwin->command($levelclearcmd) if $autoclear;
+      $oldwin->command($levelclearcmd) if $autoclear && $oldwin;
    }
 );
 
